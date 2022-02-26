@@ -1,20 +1,15 @@
-import Todoapp from './components/Todoapp'
-import Taskmodal from './components/Taskmodal';
 import {useState} from 'react'
+import Button from './components/Button'
+import Todo from './components/Todo'
 
 function App() {
-  const [openModal, setOpenModal] = useState(false)
+const [openModal, setOpenModal] = useState(false)
 
-  const handleClick = () => {
-    setOpenModal(true);
-    console.log('favour')
- }
-
-  return (
-    <div className="App">
-   <Todoapp letsClick = {handleClick}/>
-   <Taskmodal/>
-   <button onClick = {() => console.log('yo')}>bro</button>
+const handleClick = () => console.log('excel')
+  return(
+  <div>
+    <Todo theClick = {handleClick}/>
+    <button>Yehbhgkhkhhjkhs</button>
     </div>
   );
 }
