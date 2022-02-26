@@ -1,0 +1,50 @@
+.container{
+    width: 40rem;
+    height: 100vh;
+    background-color: white;
+    margin:auto;
+    margin-top: 10px;
+}
+
+
+.header{
+    display: flex;
+}
+
+.heading{
+    margin-top: 24px;
+    margin-left:  14px;
+    font-family: 'proxima nova';
+}
+
+.header-btn-style{
+    margin-top: 24px;
+    margin-left: 21.5rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.line{
+    border: 0.5px solid  rgb(236, 236, 236);
+    width: 38rem;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.add{
+    color: rgba(237, 77, 36, 1);
+    cursor: pointer;
+    margin-left: 4px;
+    border-bottom: 1px solid rgb(247, 121, 18);
+}
+.text{
+    margin-top: 10px;
+    margin-left: 14px;
+}
