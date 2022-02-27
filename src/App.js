@@ -1,15 +1,20 @@
 import {useState} from 'react'
 import Button from './components/Button'
 import Todo from './components/Todo'
+import Todomodal from './components/Todomodal';
 
 function App() {
 const [openModal, setOpenModal] = useState(false)
 
-const handleClick = () => console.log('excel')
+function handleClick(){
+  setOpenModal(true);
+}
+
+
   return(
   <div>
     <Todo theClick = {handleClick}/>
-    <button>Yehbhgkhkhhjkhs</button>
+    {openModal && <Todomodal closeModal = {setOpenModal}/>}
     </div>
   );
 }

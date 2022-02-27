@@ -1,0 +1,121 @@
+
+
+
+.modal{
+    width: 100%;
+    height: 100%;            
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.698039; 
+    background-color: rgb(0, 25, 25)
+}
+
+.modal-subcontainer{
+    margin:auto;
+    align-content: center;
+    background-color: white;
+    width: 30rem;
+    margin-top: 7rem;
+    height: 28rem;
+}
+
+.newtask-container{
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.modal-subcontainer h2{
+    margin-top: 20px;
+}
+
+/* .btn-modal{
+    color: white;
+    border: none;
+    padding: 8px 22px;
+    cursor: pointer;
+    font-family: 'proxima nova';
+    font-weight: 700;
+    background-color: rgba(237, 77, 36, 1);
+    
+}
+
+.btn-modal:hover{
+    background-color: rgb(216, 68, 30);
+}
+
+.btn-modal:active{
+    background-color: rgb(255, 172, 152);
+} */
+
+.date-input-container input{
+    height: 25px;
+    width: 40px;
+}
+
+.calcel-btn{
+    border: none;
+    background-color: white;
+    margin-left: 19.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 50px;
+    cursor: pointer;
+    font-size:x-large;
+}
+
+
+/* .calcel-btn:hover{
+    background-color: gray;
+}
+.calcel-btn:active{
+    background-color: c4c4c4;
+} */
+
+.title-container{
+margin-left: 20px;
+margin-top: 10px;
+}
+.input-title{
+    width: 27rem;
+    height:25px;
+    padding-left: 5px;
+}
+
+.description-container{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.description-input{
+    width: 27rem;
+    height: 55px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.date-input-container{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.priority-container{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.comments-container{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.comments-input{
+    width: 27rem;
+    height: 55px;
+}
+
+.btn-modal-container{
+    margin-left: 20.8rem;
+    margin-top: 8px;
+}
