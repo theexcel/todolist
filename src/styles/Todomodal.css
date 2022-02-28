@@ -8,8 +8,8 @@
     top: 0;
     left: 0;
     /* opacity: 0.698039; */
-    background-color: rgba(0, 25, 25, 0.555)
-    
+    background-color: rgba(0, 25, 25, 0.555);
+    transition: width 2s, height 2s, transform 2s;
 }
 
 .modal-subcontainer{
@@ -19,6 +19,7 @@
     width: 30rem;
     margin-top: 7rem;
     height: 28rem;
+    box-shadow: aqua;
 }
 
 .newtask-container{

@@ -8,19 +8,19 @@ monthDate, setMonthDate, input, setInput, priority, setPriority, comments, setCo
   
     //  const [letsCloseModal, setLetsCloseModal] = useState(true)
     
-const editTodo = (id) => {
-let todoList = [...todos]
-let selectedTodo = todoList[id]
-    setInput(selectedTodo.text)
-    setDescription(selectedTodo.description)
-    setDayDate(selectedTodo.dayDate)
-    setMonthDate(selectedTodo.monthDate)
-    setYearDate(selectedTodo.yearDate)
-    setPriority(selectedTodo.priority)
-    setComments(selectedTodo.comments)
-    console.log('excel')
-    open()
-}
+// const editTodo = (id) => {
+// let todoList = [...todos]
+// let selectedTodo = todoList[id]
+//     setInput(selectedTodo.text)
+//     setDescription(selectedTodo.description)
+//     setDayDate(selectedTodo.dayDate)
+//     setMonthDate(selectedTodo.monthDate)
+//     setYearDate(selectedTodo.yearDate)
+//     setPriority(selectedTodo.priority)
+//     setComments(selectedTodo.comments)
+//     console.log('excel')
+//     open()
+// }
 
 
 

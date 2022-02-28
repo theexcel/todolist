@@ -5,6 +5,7 @@
     margin:auto;
     margin-top: 10px;
     position:relative;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -15,12 +16,13 @@
 .heading{
     margin-top: 24px;
     margin-left:  14px;
-    font-family: 'proxima nova';
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
 }
 
 .header-btn-style{
     margin-top: 24px;
-    margin-left: 21.5rem;
+    margin-left: 20rem;
 }
 
 *{
@@ -30,7 +32,7 @@
 
 body{
     background-color: rgba(240, 240, 240, 1);
-    font-family: 'proxima nova';
+    /* font-family: 'proxima nova'; */
 }
 
 .line{
@@ -47,10 +49,14 @@ body{
     border-bottom: 1px solid rgb(247, 121, 18);
 }
 .text{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }
 
 .text-style{
-    margin-top: 5px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }

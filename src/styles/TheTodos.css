@@ -2,6 +2,7 @@
     display: flex;
    margin-left: 14px;
    margin-top: 10px;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .date-container{
@@ -10,6 +11,7 @@ margin-left:0.5rem;
 margin-top: 16px;
 position: absolute;
 left: 24rem;
+font-family: 'Montserrat', sans-serif;
 }
 
 .container-title{
@@ -17,6 +19,7 @@ left: 24rem;
     margin-top: 18px;
     position: absolute;
     left: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .checkbox{
