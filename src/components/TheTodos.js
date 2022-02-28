@@ -1,5 +1,9 @@
 import React from 'react'
 import '../styles/TheTodos.css'
+import calendar from '../Image/calendar.svg'
+import comment from '../Image/commenticon.svg'
+import editicon from '../Image/editicon.svg'
+
 
 function TheTodos({todos, setTodos}) {
 //   const todoFunct = () => {
@@ -9,18 +13,35 @@ function TheTodos({todos, setTodos}) {
 
 
   return (
-    <div >
-          <div className=''>
-            {todos && todos.map((todo) => (<div key = {todo.id} className = 'list-container' >
-              <input type = 'checkbox' className='checkbox'/>
-              <div className= 'container-title'>{todo.text}</div>
-            <div className= 'date-container'>{todo.dayDate}/{todo.monthDate}/{todo.yearDate}</div>
-            <div className='comment-icon'>comment</div>
-            <div className = 'edit-icon'></div>
-            </div>))}
-        </div> 
+    <div>
+      <div className="">
+        {todos &&
+          todos.map((todo) => (
+            <div key={todo.id} className="list-container">
+              <input type="checkbox" className="checkbox" />
+              <div className="container-title">{todo.text}</div>
+              <div className="calendar-icon">
+                <img src={calendar} width="30" height="30" />
+              </div>
+              <div className="date-container">
+                {todo.dayDate}/{todo.monthDate}/{todo.yearDate}
+              </div>
+              <div className="comment-icon">
+                <div className="subcomment">
+                  <img src={comment} width="20" height="20" />
+                </div>
+              </div>
+              <div className="edit-icon">
+                <div className="subedit">
+                  <img src={editicon} width="20" height="20" />
+                </div>
+              </div>
+              <div className="todo-line"></div>
+            </div>
+          ))}
+      </div>
     </div>
-  )
+  );
 }
 
 export default TheTodos

@@ -5,14 +5,51 @@
 }
 
 .date-container{
-   
-    margin-left: 18rem;
+
+margin-left:0.5rem;
+margin-top: 16px;
 }
 
 .container-title{
     margin-left: 8px;
+    margin-top: 18px;
 }
 
 .checkbox{
-margin-top: 3px;
+margin-top: 18px;
+width:20px;
+height:20px;
+}
+
+.calendar-icon{
+margin-left: 19rem;
+margin-top: 10px
+}
+
+.comment-icon{
+  margin-left: 2rem;
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  margin-left: 100px
+}
+
+.subcomment{
+  padding: 10px 10px;
+}
+.edit-icon{
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  margin-left: 20px;
+ 
+}
+
+.subedit{
+  padding: 10px 10px;
+}
+
+.todo-line{
+  height: 2px;
+  background-color:black
 }
