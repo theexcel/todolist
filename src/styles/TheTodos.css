@@ -1,0 +1,18 @@
+.list-container{
+    display: flex;
+   margin-left: 14px;
+   margin-top: 10px;
+}
+
+.date-container{
+   
+    margin-left: 18rem;
+}
+
+.container-title{
+    margin-left: 8px;
+}
+
+.checkbox{
+margin-top: 3px;
+}
