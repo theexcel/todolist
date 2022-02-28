@@ -14,7 +14,7 @@ setPriority, comments, setComments}) {
         <header className='header'>
             <h1 className = 'heading'>PawaTask</h1>
             <div className = 'header-btn-style'>
-                <Button text = 'add a new task' theClick = {theClick}/>
+                <Button text = 'Add a new task' theClick = {theClick}/>
             </div>
 
         </header>

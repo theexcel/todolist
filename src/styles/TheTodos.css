@@ -8,11 +8,15 @@
 
 margin-left:0.5rem;
 margin-top: 16px;
+position: absolute;
+left: 24rem;
 }
 
 .container-title{
     margin-left: 8px;
     margin-top: 18px;
+    position: absolute;
+    left: 2rem;
 }
 
 .checkbox{
@@ -22,16 +26,19 @@ height:20px;
 }
 
 .calendar-icon{
-margin-left: 19rem;
-margin-top: 10px
+margin-top: 4px;
+left: 22.5rem;
+position: absolute;
+margin-top: 12px;
 }
 
 .comment-icon{
   margin-left: 2rem;
   width: 40px;
   height: 40px;
-  background-color: blue;
-  margin-left: 100px
+  background-color: rgba(237, 77, 36, 1);
+  left: 31rem;
+  position: absolute;
 }
 
 .subcomment{
@@ -40,9 +47,9 @@ margin-top: 10px
 .edit-icon{
   width: 40px;
   height: 40px;
-  background-color: blue;
-  margin-left: 20px;
- 
+  background-color: rgba(237, 77, 36, 1);
+  left: 36.5rem;
+  position: absolute;
 }
 
 .subedit{

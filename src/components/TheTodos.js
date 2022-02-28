@@ -22,7 +22,7 @@ function TheTodos({todos, setTodos, editTodo}) {
               <input type="checkbox" className="checkbox" />
               <div className="container-title">{todo.text}</div>
               <div className="calendar-icon">
-                <img src={calendar} width="30" height="30" />
+                <img src={calendar} width="25" height="25" />
               </div>
               <div className="date-container">
                 {todo.dayDate}/{todo.monthDate}/{todo.yearDate}
@@ -33,7 +33,7 @@ function TheTodos({todos, setTodos, editTodo}) {
                 </div>
               </div>
               <div className="edit-icon" >
-                <div className="subedit" onClick = {editTodo}>
+                <div className="subedit">
                   <img src={editicon} width="20" height="20" />
                 </div>
               </div>

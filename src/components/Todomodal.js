@@ -22,6 +22,8 @@ let selectedTodo = todoList[id]
     open()
 }
 
+
+
      const open = () => {
          closeModal(true)
      }
