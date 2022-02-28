@@ -3,16 +3,12 @@ import Button from './components/Button'
 import Todo from './components/Todo'
 import Todomodal from './components/Todomodal';
 
+//  const user = localStorage.getItem('todos') || '[]'
 
 function App() {
 const [openModal, setOpenModal] = useState(false)
 const [todos, setTodos] = useState([])
-const [input, setInput] =useState(() => {
-  // getting stored value
-  const saved = localStorage.getItem('todo');
-  const initialValue = JSON.parse(saved);
-  return initialValue || "";
-});
+const [input, setInput] =useState('');
 const [description, setDescription] = useState('')
 const [dayDate, setDayDate ] = useState('')
 const [monthDate, setMonthDate] = useState('')
@@ -20,9 +16,9 @@ const [yearDate, setYearDate] = useState('')
 const[priority, setPriority] = useState('')
 const[comments, setComments] = useState('')
 
-useEffect(() => {
-  localStorage.setItem('todo', JSON.stringify(input))
-}, [input])
+// useEffect(() => {
+//   localStorage.setItem('todos', JSON.stringify(todos))
+// }, [todos])
 
 
 

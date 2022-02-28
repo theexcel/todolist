@@ -5,7 +5,7 @@ import comment from '../Image/commenticon.svg'
 import editicon from '../Image/editicon.svg'
 
 
-function TheTodos({todos, setTodos}) {
+function TheTodos({todos, setTodos, editTodo}) {
 //   const todoFunct = () => {
 //     todos && todos.map((todo) => console.log(todo))
 //   }
@@ -17,7 +17,8 @@ function TheTodos({todos, setTodos}) {
       <div className="">
         {todos &&
           todos.map((todo) => (
-            <div key={todo.id} className="list-container">
+            <div key={todo.id} >
+              <div className="list-container">
               <input type="checkbox" className="checkbox" />
               <div className="container-title">{todo.text}</div>
               <div className="calendar-icon">
@@ -31,12 +32,13 @@ function TheTodos({todos, setTodos}) {
                   <img src={comment} width="20" height="20" />
                 </div>
               </div>
-              <div className="edit-icon">
-                <div className="subedit">
+              <div className="edit-icon" >
+                <div className="subedit" onClick = {editTodo}>
                   <img src={editicon} width="20" height="20" />
                 </div>
               </div>
-              <div className="todo-line"></div>
+              </div>
+              <div className='line'></div>
             </div>
           ))}
       </div>

@@ -3,7 +3,7 @@ import '../styles/Todo.css'
 import Button from './Button'
 import TheTodos from './TheTodos'
 
-function Todo({theClick, todos, setTodos, input, description, setInput, setDescription, dayDate, setDayDate, monthDate, setMonthDate, yearDate,setYearDate,priority,
+function Todo({editTodo, theClick, todos, setTodos, input, description, setInput, setDescription, dayDate, setDayDate, monthDate, setMonthDate, yearDate,setYearDate,priority,
 setPriority, comments, setComments}) {
 // const [showTodo, setShowTodo] = useState(true)
 
@@ -21,7 +21,7 @@ setPriority, comments, setComments}) {
 <div className = 'line'></div>
 {todos && todos.length === 0 ? <div className = 'text-style'>
     <span className = 'text'> You do not have any tasks<a onClick = {theClick} className = 'add' >add a new task</a></span>
-</div>: <TheTodos todos = {todos} setTodos = {setTodos} input = {input} setInput = {setInput} 
+</div>: <TheTodos editTodo = {editTodo} todos = {todos} setTodos = {setTodos} input = {input} setInput = {setInput} 
     description = {description} setDescription = {setDescription}
     dayDate = {dayDate} setDayDate = {setDayDate} 
     monthDate = {monthDate} setMonthDate ={setMonthDate}

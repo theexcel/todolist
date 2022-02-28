@@ -3,15 +3,28 @@ import  '../styles/Todomodal.css'
 import Button from '../components/Button'
 
 
-function Todomodal({closeModal, todos, setTodos, description, setDescription, dayDate, setDayDate, yearDate, setYearDate,
+function Todomodal({ theClick, closeModal, todos, setTodos, description, setDescription, dayDate, setDayDate, yearDate, setYearDate,
 monthDate, setMonthDate, input, setInput, priority, setPriority, comments, setComments}) {
   
-    // const [input, setInput] = useState('')
-    // const [todos, setTodos] = useState([])
-    // const [description, setDescription] = useState('')
-   
+    //  const [letsCloseModal, setLetsCloseModal] = useState(true)
     
-    
+const editTodo = (id) => {
+let todoList = [...todos]
+let selectedTodo = todoList[id]
+    setInput(selectedTodo.text)
+    setDescription(selectedTodo.description)
+    setDayDate(selectedTodo.dayDate)
+    setMonthDate(selectedTodo.monthDate)
+    setYearDate(selectedTodo.yearDate)
+    setPriority(selectedTodo.priority)
+    setComments(selectedTodo.comments)
+    console.log('excel')
+    open()
+}
+
+     const open = () => {
+         closeModal(true)
+     }
 const handleInputChange = e => setInput(e.target.value)
 const handleDescriptionChange = e => setDescription(e.target.value)
 const handleDayDate = e => setDayDate(e.target.value)
@@ -43,17 +56,21 @@ const handleComments = e => setComments(e.target.value)
         setYearDate('')
         setPriority('')
         setComments('')
+        close()
+}
 
+const close = () => {
+    closeModal(false)
 }
 
     
 
   return (
-    <form className = 'modal' onSubmit = {handleSubmit}>
+     <form className = 'modal' onSubmit = {handleSubmit}>
         <div className = 'modal-subcontainer'>
         <header className = 'newtask-container'>
             <h2>Newtask</h2>
-            <div className='calcel-btn' onClick={() => closeModal(false)}>X</div>
+            <div className='calcel-btn' onClick={close}>X</div>
         </header>
         <div className = 'title-container'>
             <p>Title:</p>
@@ -65,9 +82,9 @@ const handleComments = e => setComments(e.target.value)
         </div>
          <div className='date-input-container'>
             <p>set due date</p>
-            <input placeholder='DD' type = 'text' name = 'text' value = {dayDate} onChange = {handleDayDate}></input>
-            <input placeholder='MM' style = {{marginLeft: '5px'}} value = {monthDate} onChange = {handleMonthDate}></input>
-            <input placeholder='AAAA' style = {{marginLeft: '5px'}} value = {yearDate} onChange = {handleYearDate}></input>
+            <input placeholder='DD' type = 'text' name = 'text' value = {dayDate} onChange = {handleDayDate} style = {{marginLeft: '5px', paddingLeft: '8px'}}></input>
+            <input placeholder='MM' style = {{marginLeft: '5px', paddingLeft: '8px'}} value = {monthDate} onChange = {handleMonthDate}></input>
+            <input placeholder='AAAA' style = {{marginLeft: '5px', paddingLeft: '4px'}} value = {yearDate} onChange = {handleYearDate}></input>
         </div>
         <div className = 'priority-container'>
             <p>Priority</p>
@@ -83,7 +100,7 @@ const handleComments = e => setComments(e.target.value)
         </div>
         <div className='btn-modal-container'>
             {/* <button className = 'btn-add-modal'>Add to your task</button> */}
-        <Button text = 'Add new task' type = 'submit'/>
+        <button  type = 'submit' onClick= {handleSubmit} className = 'btn'>Add new task</button>
          </div> 
          </div>  
      </form>
