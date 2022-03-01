@@ -8,19 +8,26 @@ monthDate, setMonthDate, input, setInput, priority, setPriority, comments, setCo
   
     //  const [letsCloseModal, setLetsCloseModal] = useState(true)
     
-// const editTodo = (id) => {
-// let todoList = [...todos]
-// let selectedTodo = todoList[id]
-//     setInput(selectedTodo.text)
-//     setDescription(selectedTodo.description)
-//     setDayDate(selectedTodo.dayDate)
-//     setMonthDate(selectedTodo.monthDate)
-//     setYearDate(selectedTodo.yearDate)
-//     setPriority(selectedTodo.priority)
-//     setComments(selectedTodo.comments)
-//     console.log('excel')
-//     open()
-// }
+ const editTodo = (id) => {
+ let todoList = [...todos]
+ let selectedTodo = todoList.find(todo => todo.id === id)
+ 
+   setInput(selectedTodo.text)
+//   setDescription(selectedTodo.description)
+//   setDayDate(selectedTodo.dayDate)
+//   setMonthDate(selectedTodo.monthDate)
+//   setYearDate(selectedTodo.monthDate)
+//   setPriority(selectedTodo.priority)
+//   setComments(selectedTodo.comments)
+//  let selectedTodo = todoList[id]
+    // setInput(selectedTodo.text)
+    // setDescription(selectedTodo.description)
+    //  setDayDate(selectedTodo.dayDate)
+    //  setMonthDate(selectedTodo.monthDate)
+    //  setYearDate(selectedTodo.yearDate)
+    //  setPriority(selectedTodo.priority)
+    //  setComments(selectedTodo.comments)
+ }
 
 
 
@@ -102,7 +109,7 @@ const close = () => {
         </div>
         <div className='btn-modal-container'>
             {/* <button className = 'btn-add-modal'>Add to your task</button> */}
-        <button  type = 'submit' onClick= {handleSubmit} className = 'btn'>Add new task</button>
+        <button  type = 'submit' onClick= {handleSubmit} className = 'btn'>Ad new task</button>
          </div> 
          </div>  
      </form>
