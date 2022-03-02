@@ -1,6 +1,6 @@
 .list-container{
     display: flex;
-   margin-left: 14px;
+   margin-left: 10px;
    margin-top: 10px;
    font-family: 'Montserrat', sans-serif;
 }
@@ -15,8 +15,8 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .container-title{
-    margin-left: 8px;
-    margin-top: 18px;
+    margin-left: 3%;
+    margin-top: 3%;
     position: absolute;
     left: 2rem;
     font-family: 'Montserrat', sans-serif;
@@ -40,7 +40,7 @@ margin-top: 12px;
   width: 40px;
   height: 40px;
   background-color: rgba(237, 77, 36, 1);
-  left: 31rem;
+  left: 79%;
   position: absolute;
 }
 
@@ -51,7 +51,7 @@ margin-top: 12px;
   width: 40px;
   height: 40px;
   background-color: rgba(237, 77, 36, 1);
-  left: 36.5rem;
+  left: 91%;
   position: absolute;
 }
 
@@ -65,4 +65,3 @@ margin-top: 12px;
     margin: auto;
     margin-top: 10px;
 }
-

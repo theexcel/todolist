@@ -58,7 +58,7 @@ function Todomodal({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (input !== "") {
+    if (input  && dayDate && monthDate && yearDate !== "") {
       setTodos([
         ...todos,
         {
@@ -72,7 +72,7 @@ function Todomodal({
           comments: comments.trim(),
         },
       ]);
-    }
+    } else return 
     setInput("");
     setDescription("");
     setDayDate("");
@@ -88,7 +88,7 @@ function Todomodal({
   };
 
   return (
-    <form className="modal" onSubmit={handleSubmit}>
+    <div className="modal" onSubmit={handleSubmit}>
       <div className="modal-subcontainer">
         <header className="newtask-container">
           <h2>Newtask</h2>
@@ -121,7 +121,6 @@ function Todomodal({
             name="text"
             value={dayDate}
             onChange={handleDayDate}
-            style={{ marginLeft: "5px", paddingLeft: "8px" }}
           ></input>
           <input
             placeholder="MM"
@@ -130,11 +129,12 @@ function Todomodal({
             onChange={handleMonthDate}
           ></input>
           <input
-            placeholder="AAAA"
+
+            placeholder="YEAR"
             style={{ marginLeft: "5px", paddingLeft: "4px" }}
             value={yearDate}
             onChange={handleYearDate}
-          ></input>
+          required></input>
         </div>
         <div className="priority-container">
           <p>Priority</p>
@@ -159,7 +159,7 @@ function Todomodal({
           </button>
         </div>
       </div>
-    </form>
+    </div>
   );
 }
 

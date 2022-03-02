@@ -40,7 +40,11 @@ function TheTodos({ todos, setTodos, editTodo }) {
     
   }
 
+function handleDelete(id){
+ const findTodo = todos.filter(todo => todo.id !== id)
+  setTodos(findTodo)
 
+}
 
 
   return (
@@ -50,7 +54,7 @@ function TheTodos({ todos, setTodos, editTodo }) {
           todos.map((todo) => (
             <div key={todo.id}>
               <div className="list-container">
-                <input type="checkbox" className="checkbox" />
+                <input type="checkbox" className="checkbox" onClick = {() => handleDelete(todo.id)}/>
                 <div className="container-title">{todo.text}</div>
                 <div className="calendar-icon">
                   <img src={calendar} width="25" height="25" />
