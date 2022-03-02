@@ -11,7 +11,6 @@
     left: 0;
     /* opacity: 0.698039; */
     background-color: rgba(0, 25, 25, 0.555);
-      transition: width 2s, height 2s, transform 2s;
 }
 
 .modal-subcontainer{
@@ -41,12 +40,12 @@
 .calcel-btn{
     border: none;
     background-color: white;
-    margin-left: 21rem;
+    margin-left: 19.5rem;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 25px;
     width: 50px;
     cursor: pointer;
-    font-size:x-large;
+    font-size:700;
 }
 
 .title-container{
@@ -106,7 +105,7 @@ font-weight: 700;
     font-family: 'proxima nova';
     font-weight: 700;
     background-color: rgba(237, 77, 36, 1);
-    
+
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -123,19 +122,20 @@ font-weight: 700;
     .newtask-container{
         display: flex;
         margin-left: 50px;
-    
+        font-weight: 600;
+
     }
-    
+
     .modal-subcontainer h2{
         margin-top: 9.4px;
         width: 10rem;
     }
-    
+
     .date-input-container input{
         height: 12px;
         width: 19px;
     }
-    
+
     .calcel-btn{
         border: none;
         background-color: white;
@@ -146,7 +146,7 @@ font-weight: 700;
         cursor: pointer;
         font-size:x-large;
     }
-    
+
     .title-container{
     margin-left: 50px;
     margin-top: 10px;
@@ -156,44 +156,44 @@ font-weight: 700;
         height:12px;
         padding-left: 2.3px;
     }
-    
+
     .description-container{
         margin-left: 50px;
         margin-top: 4.7px;
     }
-    
+
     .description-input{
         width: 13rem;
         height: 26px;
         padding-left: 2.3px;
         padding-top: 2.3px;
     }
-    
+
     .date-input-container{
         margin-left: 50px;
         margin-top: 4.7px;
     }
-    
+
     .priority-container{
         margin-left: 50px;
         margin-top: 4.7px;
     }
-    
+
     .comments-container{
         margin-left: 50px;
         margin-top: 9.4px;
     }
-    
+
     .comments-input{
         width: 12.7rem;
         height: 26px;
     }
-    
+
     .btn-modal-container{
         margin-left: 10rem;
         margin-top: 3.75px;
     }
-    
+
     .btn{
         color: white;
         border: none;
@@ -201,8 +201,8 @@ font-weight: 700;
         cursor: pointer;
         font-weight: 700;
         background-color: rgba(237, 77, 36, 1);
-        
+
     }
-    
+
 
 }
