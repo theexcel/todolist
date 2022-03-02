@@ -7,6 +7,7 @@ import OtherModal from "./OtherModal";
 
 function TheTodos({ todos, setTodos, editTodo }) {
   const [openEditModal, setEditOpenModal] = useState(false);
+  const [opener, setOpener] = useState(false)
 
   const [openModal, setOpenModal] = useState(false);
   // const [task, setTask] = useState(todos)
@@ -41,15 +42,16 @@ function TheTodos({ todos, setTodos, editTodo }) {
   }
 
 function handleDelete(id){
- const findTodo = todos.filter(todo => todo.id !== id)
-  setTodos(findTodo)
-
+const findTodo = todos.filter(todo => todo.id !== id)
+setTodos(findTodo)
+setOpener(true)
 }
 
 
   return (
     <div>
       <div className="">
+{opener && <div className = 'validation'>Successfully completed task!</div>}
         {todos &&
           todos.map((todo) => (
             <div key={todo.id}>

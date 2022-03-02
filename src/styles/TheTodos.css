@@ -65,3 +65,17 @@ margin-top: 12px;
     margin: auto;
     margin-top: 10px;
 }
+
+.validation {
+  animation: hideAnimation 0s ease-in 2s;
+  animation-fill-mode: forwards;
+  color:green;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}

@@ -32,7 +32,7 @@
 
 .newtask-container{
     display: flex;
-    margin-left: 20px;
+    margin-left: -10px;
 
 }
 
@@ -48,7 +48,7 @@
 .calcel-btn {
     border: none;
     background-color: white;
-    margin-left: 65%;
+    margin-left: 75%;
     font-weight: 700;
     margin-top: 25px;
     width: 50px;
@@ -56,11 +56,11 @@
     font-size: 700;
 }
 
+
 .title-container {
     margin-left: -3px;
     margin-top: 15px;
-    font-weight: 200;
-    font-weight: 700;
+    
 }
 /* .input-title{
     width: 27rem;
